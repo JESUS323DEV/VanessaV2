@@ -1,0 +1,1568 @@
+/* =====================
+   MEDIA QUERIES RESPONSIVE
+   ===================== */
+
+/* Móviles XS (≤575px) */
+@media (max-width: 575px) {
+    body::before {
+        content: "XS";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 20px;
+        height: 20px;
+        background: rgb(185, 6, 6);
+        color: rgb(0, 0, 0);
+        padding: 5px;
+        z-index: 9999;
+
+    }
+}
+
+/*SM: Móviles pequeños verticales y móviles estándar(576px – 767px) */
+@media (min-width: 576px) and (max-width: 767px) {
+    body::before {
+        content: "SM";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 20px;
+        height: 20px;
+        background: rgb(0, 255, 30);
+        color: rgb(0, 0, 0);
+        padding: 5px;
+        z-index: 9999;
+
+    }
+
+    /*==========================HERO========================*/
+    .bgHero {
+
+        min-height: 75vh;
+    }
+
+    .text-hero {
+
+        margin-top: 1rem;
+        gap: 3rem;
+    }
+
+    .text-hero h1 {
+
+        font-size: 4rem;
+    }
+
+    /*==========================ABOUT ME========================*/
+
+    .cont-aboutMe h2 {
+
+        font-size: 3rem;
+        width: 40%;
+    }
+
+    .cont-aboutMe h3 {
+
+        font-size: 2rem;
+        width: 70%;
+    }
+
+    .texto-aboutMe p {
+
+        line-height: 1.9;
+        text-align: start;
+        width: 75%;
+        margin: auto;
+    }
+
+    /*==========================SERVICES========================*/
+
+    .cont-servicios h2 {
+
+        font-size: 3rem;
+        width: 60%;
+    }
+
+    /*==========================EN QUE PUEDO AYUDARTE========================*/
+
+    .cont-details h2 {
+
+        font-size: 3rem;
+        width: 90%;
+    }
+
+    .cont-details {
+
+        width: 80%;
+        margin: auto;
+    }
+
+    /*==========================CONTACTO========================*/
+
+    form h2 {
+
+        font-size: 3rem;
+        width: 40%;
+    }
+
+    .mapa-section h2 {
+
+        font-size: 3rem;
+        width: 70%;
+    }
+
+}
+
+
+/*MD: Tablets verticales (768px – 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+    body::before {
+        content: "MD";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 20px;
+        height: 20px;
+        background: rgb(1, 22, 255);
+        color: rgb(0, 0, 0);
+        padding: 5px;
+        z-index: 9999;
+    }
+
+    /*==========================HERO========================*/
+    .bgHero {
+
+        min-height: 75vh;
+    }
+
+    .text-hero {
+
+        gap: 3rem;
+    }
+
+    .text-hero h1 {
+
+        font-size: 4.5rem;
+    }
+
+    /*==========================ABOUT ME========================*/
+
+    .cont-aboutMe h2 {
+
+        font-size: 3.5rem;
+        width: 35%;
+    }
+
+    .cont-aboutMe h3 {
+
+        font-size: 2.2rem;
+        width: 60%;
+    }
+
+    .texto-aboutMe p {
+
+        line-height: 1.9;
+        text-align: start;
+        width: 75%;
+        margin: auto;
+    }
+
+
+
+    /*==========================SERVICES========================*/
+
+    .cont-servicios h2 {
+
+        font-size: 3.5rem;
+        width: 55%;
+    }
+
+    /*==========================EN QUE PUEDO AYUDARTE========================*/
+
+    .cont-details h2 {
+
+        font-size: 3.5rem;
+        width: 90%;
+    }
+
+    .cont-details {
+
+        width: 80%;
+        margin: auto;
+    }
+
+    /*==========================CONTACTO========================*/
+
+    form h2 {
+
+        font-size: 3.5rem;
+        width: 40%;
+    }
+
+    .mapa-section h2 {
+
+        font-size: 3.5rem;
+        width: 70%;
+    }
+}
+
+/* LG Tablets horizontales / laptops pequeñas-mini LG (992px – 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    body::before {
+        content: "LG";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 20px;
+        height: 20px;
+        background: rgb(196, 1, 255);
+        color: rgb(0, 0, 0);
+        padding: 5px;
+        z-index: 9999;
+
+    }
+
+    #aboutMe,
+    #services,
+    #contact {
+        margin-top: 7rem;
+    }
+
+    #hero {
+
+        scroll-margin-top: 6rem;
+    }
+
+    #aboutMe {
+
+        scroll-margin-top: 9rem;
+    }
+
+    #services {
+
+        scroll-margin-top: 10rem;
+    }
+
+    #contact {
+
+        scroll-margin-top: 7rem;
+    }
+
+    /*====================HEADER=======================*/
+    /* anulamos el estado móvil */
+    .menu.closed,
+    .menu.open {
+        display: flex !important;
+    }
+
+
+
+    .list-nav {
+        position: static !important;
+        top: auto !important;
+        left: auto !important;
+        width: auto !important;
+        height: auto !important;
+        background: none !important;
+        z-index: auto !important;
+
+    }
+
+    .logo {
+        width: 200px;
+        backdrop-filter: blur(3px);
+
+
+    }
+
+    .list-nav::before {
+        content: none !important;
+    }
+
+    .menu {
+        position: static;
+        height: auto;
+        width: auto;
+        background: none;
+    }
+
+    .menu ul {
+
+        display: flex !important;
+        flex-direction: row !important;
+        gap: 2rem;
+        height: auto !important;
+    }
+
+    /* estilos de los links en desktop */
+    .menu li {
+
+        padding: 0;
+        font-size: 1.2rem;
+        color: black;
+        width: auto;
+        border: none;
+    }
+
+
+    .btn-menu,
+    .btn-close {
+        display: none;
+    }
+
+    .nav-menu {
+        padding: 0;
+    }
+
+    .list-nav ul {
+        padding: 0.8rem 0;
+    }
+
+    .list-nav {
+        position: static;
+        top: auto;
+        left: auto;
+        width: auto;
+        height: auto;
+        background: none;
+        z-index: auto;
+    }
+
+    .list-nav::before {
+
+        content: none;
+
+    }
+
+    .list-nav a {
+
+        display: inline-block;
+        transition: transform 0.2s ease;
+        border-bottom: 1px solid transparent;
+        padding-bottom: 0.1rem;
+        backdrop-filter: blur(3px);
+
+
+
+    }
+
+    .list-nav a:focus {
+
+        transform: scale(1.1);
+        border-bottom: 1px solid rgb(59, 59, 53);
+
+    }
+
+
+    .bgNav {
+        width: auto;
+        width: 100%;
+        z-index: 10;
+        background-position: top;
+
+
+    }
+
+    .bgNav::before {
+
+        background-color: rgba(255, 255, 255, 0.74);
+    }
+
+
+    /*==========================HERO========================*/
+    .bgHero {
+
+        min-height: 55vh;
+    }
+
+    .text-hero {
+
+        gap: 3rem;
+    }
+
+    .text-hero h1 {
+
+        font-size: 5rem;
+    }
+
+    .text-hero p {
+
+        font-size: 1.5rem;
+    }
+
+    .cta-hero {
+
+        padding: 0.6rem 3rem;
+        margin-bottom: 2rem;
+    }
+
+    /*==========================ABOUT ME========================*/
+
+    .cont-aboutMe h2 {
+
+        font-size: 3.5rem;
+        width: 30%;
+    }
+
+    .texto-aboutMe h3 {
+
+        font-size: 2.3rem;
+        width: 45%;
+        margin: auto;
+        margin-bottom: 2rem;
+    }
+
+
+
+
+
+    .texto-aboutMe p {
+
+        line-height: 1.7;
+        font-size: 1.1rem;
+        text-align: start;
+        width: 75%;
+        margin: auto;
+    }
+
+    .accordion-content {
+        max-height: none !important;
+        overflow: visible !important;
+    }
+
+    .cont-leer {
+        display: none;
+    }
+
+    /*==========================SERVICES========================*/
+
+    .grid-services h2 {
+        grid-column: 1/-1;
+        font-size: 3rem;
+        width: 35%;
+
+
+    }
+
+    .contenido-elevation p,
+    .cont-intervencion p {
+
+        width: 75%;
+        font-size: 1.1rem;
+        line-height: 2;
+    }
+
+    .cont-icon {
+
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .contenido-elevation h3,
+    .cont-intervencion h3 {
+        font-size: 1.8rem;
+    }
+
+    .cont-details summary {
+
+        font-size: 1.7rem;
+
+        padding: 1rem 2rem;
+    }
+
+
+    /*==========================EN QUE PUEDO AYUDARTE========================*/
+
+    .cont-details h2 {
+
+        font-size: 3rem;
+        width: 100%;
+    }
+
+    .cont-details {
+
+        width: 60%;
+        margin: auto;
+    }
+
+    /*==========================CONTACTO========================*/
+
+
+    .contact-form {
+
+        width: 80%;
+    }
+
+
+    form {
+
+        margin: 0;
+        padding: 0;
+    }
+
+    form h2 {
+
+        display: none;
+    }
+
+
+    .contenido-grid {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: start;
+        align-items: start;
+        width: 99%;
+        margin: 0 auto;
+
+
+    }
+
+    .mapa-section {
+
+        margin-top: 2.4rem;
+    }
+
+    .mapa-container {
+        margin: auto;
+        width: 80%;
+    }
+
+
+
+    .mapa-container iframe {
+
+        width: 100%;
+
+
+    }
+
+    .h2-grid {
+
+        display: block;
+        grid-column: 1/-1;
+
+        font-size: 3.5rem;
+        text-align: center;
+
+        border-bottom: 2px solid #d6b56da2;
+        width: 30%;
+        margin: auto;
+        margin-bottom: 2rem;
+    }
+
+    /*==========================FOOTER========================*/
+
+    .contenido-footer {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+
+        padding: 2rem 0;
+    }
+
+    .img-foot img {
+
+        width: 200px;
+    }
+
+    .img-foot small {
+
+        font-size: 0.9rem;
+
+    }
+
+    .contacto-foot h4,
+    .legal-foot h4 {
+
+        font-size: 1.3rem;
+    }
+
+    .cont-footer a {
+
+        font-size: 0.8rem;
+    }
+
+    .reservados {
+
+        grid-column: 1/-1;
+        font-size: 1rem !important;
+        margin-top: 2rem;
+        text-align: center;
+    }
+
+}
+
+/*SXL: laptos pequeñas(1200px – 1279px) */
+@media (min-width: 1200px) and (max-width: 1279px) {
+    body::before {
+        content: "1200px-1279px";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 50px;
+        height: 20px;
+        background: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        padding: 5px;
+        z-index: 9999;
+
+    }
+}
+
+/*XL laptos grandes (1280px – 1399px) */
+@media (min-width: 1280px) and (max-width: 1399px) {
+
+    body::before {
+        content: "XL";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 50px;
+        height: 20px;
+        background: rgb(255, 102, 0);
+        color: rgb(255, 255, 255);
+        padding: 5px;
+        z-index: 9999;
+    }
+
+    #aboutMe,
+    #services,
+    #contact {
+        margin-top: 12rem;
+    }
+
+    #hero {
+
+        scroll-margin-top: 6rem;
+    }
+
+    #aboutMe {
+
+        scroll-margin-top: 9rem;
+    }
+
+    #services {
+
+        scroll-margin-top: 6rem;
+    }
+
+    #contact {
+
+        scroll-margin-top: 7rem;
+    }
+
+    /*====================HEADER=======================*/
+    /* anulamos el estado móvil */
+    .menu.closed,
+    .menu.open {
+        display: flex !important;
+    }
+
+
+
+    .list-nav {
+        position: static !important;
+        top: auto !important;
+        left: auto !important;
+        width: auto !important;
+        height: auto !important;
+        background: none !important;
+        z-index: auto !important;
+
+    }
+
+    .logo {
+        width: 200px;
+        backdrop-filter: blur(3px);
+
+
+    }
+
+    .list-nav::before {
+        content: none !important;
+    }
+
+    .menu {
+        position: static;
+        height: auto;
+        width: auto;
+        background: none;
+    }
+
+    .menu ul {
+
+        display: flex !important;
+        flex-direction: row !important;
+        gap: 2rem;
+        height: auto !important;
+    }
+
+    /* estilos de los links en desktop */
+    .menu li {
+
+        padding: 0;
+        font-size: 1.2rem;
+        color: black;
+        width: auto;
+        border: none;
+    }
+
+
+    .btn-menu,
+    .btn-close {
+        display: none;
+    }
+
+    .nav-menu {
+        padding: 0;
+    }
+
+    .list-nav ul {
+        padding: 0.8rem 0;
+    }
+
+    .list-nav {
+        position: static;
+        top: auto;
+        left: auto;
+        width: auto;
+        height: auto;
+        background: none;
+        z-index: auto;
+    }
+
+    .list-nav::before {
+
+        content: none;
+
+    }
+
+    .list-nav a:hover {
+
+        transform: scale(1.1);
+        border-bottom: 1px solid rgb(59, 59, 53);
+    }
+
+
+    .list-nav a {
+
+        display: inline-block;
+        transition: transform 0.2s ease;
+        border-bottom: 1px solid transparent;
+        padding-bottom: 0.1rem;
+        backdrop-filter: blur(3px);
+
+    }
+
+
+
+    .list-nav a:focus {
+
+        transform: scale(1.1);
+        border-bottom: 1px solid rgb(59, 59, 53);
+
+    }
+
+
+    .bgNav {
+        width: auto;
+        width: 100%;
+        z-index: 10;
+        background-position: top;
+
+
+    }
+
+    .bgNav::before {
+
+        background-color: rgba(255, 255, 255, 0.74);
+    }
+
+
+    /*==========================HERO========================*/
+    .bgHero {
+
+        min-height: 80vh;
+    }
+
+    .text-hero {
+
+        margin-top: 4rem;
+        gap: 3rem;
+        padding: 1rem;
+    }
+
+    .text-hero h1 {
+
+        font-size: 5.5rem;
+    }
+
+    .text-hero p {
+
+        font-size: 1.8rem;
+    }
+
+    .cta-hero {
+
+        padding: 0.6rem 3rem;
+        font-size: 1.1rem;
+    }
+
+    /*==========================ABOUT ME========================*/
+
+    .contenido-aboutMe {
+
+        gap: 0;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: 1fr 1fr;
+
+
+    }
+
+    .img-aboutMe img {
+
+        width: 500px;
+        margin: auto;
+
+    }
+
+    .cont-aboutMe h2 {
+
+        font-size: 4rem;
+        margin-bottom: 7rem;
+        width: 25%;
+    }
+
+    .texto-aboutMe h3 {
+
+        font-size: 2.4rem;
+        width: 65%;
+        margin-bottom: 2rem;
+    }
+
+
+
+    .texto-aboutMe p {
+
+        line-height: 1.7;
+        font-size: 1.2rem;
+        text-align: start;
+        width: 75%;
+        margin: auto
+    }
+
+    .accordion-content {
+        max-height: none !important;
+        overflow: visible !important;
+    }
+
+    .cont-leer {
+        display: none;
+    }
+
+    /*==========================SERVICES========================*/
+
+    .btn-icon svg {
+
+        width: 170px;
+        height: 100px;
+
+    }
+
+    .btn-icon {
+
+        gap: 6rem;
+    }
+
+    .btn-icon button {
+
+        padding: 1.5rem 0;
+        width: auto;
+        height: auto;
+        font-size: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .grid-services h2 {
+        grid-column: 1/-1;
+        font-size: 4rem;
+        width: 40%;
+
+
+    }
+
+    .contenido-elevation p,
+    .cont-intervencion p {
+
+        width: 90%;
+        font-size: 1.3rem;
+        line-height: 2;
+    }
+
+    .cont-icon {
+
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .contenido-elevation h3,
+    .cont-intervencion h3 {
+        font-size: 2.3rem;
+    }
+
+    /*==========================EN QUE PUEDO AYUDARTE========================*/
+
+
+    .container-details h2 {
+
+        font-size: 3rem;
+
+        width: 80%;
+        margin-bottom: 6rem;
+        margin-top: 0;
+
+
+    }
+
+    .cont-details {
+
+        width: 90%;
+
+    }
+
+
+
+
+
+    .grid-services {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5rem;
+        width: 90%;
+        margin: auto;
+
+    }
+
+    .cont-servicios,
+    .btn-icon button {
+
+        margin: 0;
+    }
+
+    /*==========================CONTACTO========================*/
+
+
+
+    .contact-form {
+
+        width: 75%;
+    }
+
+
+    form {
+
+        margin: 0;
+        padding: 0;
+    }
+
+    form h2 {
+
+        display: none;
+    }
+
+
+    .contenido-grid {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: start;
+        align-items: start;
+        width: 80%;
+        margin: auto;
+
+
+    }
+
+
+
+    .mapa-section {
+
+        margin-top: 2.2rem;
+    }
+
+    .mapa-container {
+        margin: auto;
+        width: 80%;
+    }
+
+
+    .mapa-container iframe {
+
+        width: 100%;
+
+    }
+
+    .h2-grid {
+
+        display: block;
+        grid-column: 1/-1;
+
+        font-size: 4rem;
+        text-align: center;
+
+        border-bottom: 2px solid #d6b56da2;
+        width: 30%;
+        margin: auto;
+        margin-bottom: 3rem;
+    }
+
+    /*==========================FOOTER========================*/
+
+    .contenido-footer {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+
+        padding: 2rem 0;
+    }
+
+    .img-foot img {
+
+        width: 200px;
+    }
+
+    .img-foot small {
+
+        font-size: 0.9rem;
+
+    }
+
+    .contacto-foot h4,
+    .legal-foot h4 {
+
+        font-size: 1.3rem;
+    }
+
+    .cont-footer a {
+
+        font-size: 0.8rem;
+    }
+
+    .reservados {
+
+        grid-column: 1/-1;
+        font-size: 1rem !important;
+        margin-top: 2rem;
+        text-align: center;
+    }
+
+}
+
+/*XXL: Pantallas grandes ≥1400px */
+@media (min-width: 1400px) {
+    body::before {
+        content: "XXL";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 50px;
+        height: 20px;
+        background: rgb(135, 181, 255);
+        color: rgb(255, 255, 255);
+        padding: 5px;
+        z-index: 9999;
+    }
+
+    #aboutMe,
+    #services,
+    #contact {
+        margin-top: 12rem;
+    }
+
+    #hero {
+
+        scroll-margin-top: 6rem;
+    }
+
+    #aboutMe {
+
+        scroll-margin-top: 9rem;
+    }
+
+    #services {
+
+        scroll-margin-top: 5rem;
+    }
+
+    #contact {
+
+        scroll-margin-top: 7rem;
+    }
+
+    /*====================HEADER=======================*/
+    /* anulamos el estado móvil */
+    .menu.closed,
+    .menu.open {
+        display: flex !important;
+    }
+
+
+
+    .list-nav {
+        position: static !important;
+        top: auto !important;
+        left: auto !important;
+        width: auto !important;
+        height: auto !important;
+        background: none !important;
+        z-index: auto !important;
+
+    }
+
+    .logo {
+        width: 250px;
+        backdrop-filter: blur(3px);
+
+
+    }
+
+    .list-nav::before {
+        content: none !important;
+    }
+
+    .menu {
+        position: static;
+        height: auto;
+        width: auto;
+        background: none;
+    }
+
+    .menu ul {
+
+        display: flex !important;
+        flex-direction: row !important;
+        gap: 2rem;
+        height: auto !important;
+    }
+
+    /* estilos de los links en desktop */
+    .menu li {
+
+        padding: 0;
+        font-size: 1.2rem;
+        color: black;
+        width: auto;
+        border: none;
+    }
+
+
+    .btn-menu,
+    .btn-close {
+        display: none;
+    }
+
+    .nav-menu {
+        padding: 0;
+    }
+
+    .list-nav ul {
+        padding: 0.8rem 0;
+    }
+
+    .list-nav {
+        position: static;
+        top: auto;
+        left: auto;
+        width: auto;
+        height: auto;
+        background: none;
+        z-index: auto;
+    }
+
+    .list-nav::before {
+
+        content: none;
+
+    }
+
+    .list-nav a {
+
+        display: inline-block;
+        transition: transform 0.2s ease;
+        border-bottom: 1px solid transparent;
+        padding-bottom: 0.1rem;
+        backdrop-filter: blur(3px);
+
+        font-size: 1.4rem;
+
+        text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.222);
+
+
+
+    }
+
+    .list-nav a:focus {
+
+        transform: scale(1.1);
+        border-bottom: 1px solid rgb(59, 59, 53);
+        transition: transform 0.2s ease;
+
+
+    }
+
+    .list-nav a:hover {
+
+        transform: scale(1.1);
+        border-bottom: 1px solid rgb(59, 59, 53);
+        transition: transform 0.2s ease;
+    }
+
+
+    .bgNav {
+        width: auto;
+        width: 100%;
+        z-index: 10;
+        background-position: top;
+
+
+    }
+
+    .bgNav::before {
+
+        background-color: rgba(255, 255, 255, 0.74);
+    }
+
+
+    /*==========================HERO========================*/
+    .bgHero {
+
+        min-height: 90vh;
+    }
+
+    .text-hero {
+
+        margin-top: 4rem;
+        gap: 3rem;
+        padding: 1rem;
+    }
+
+    .text-hero h1 {
+
+        font-size: 6.5rem;
+    }
+
+    .text-hero p {
+
+        font-size: 2.2rem;
+    }
+
+
+
+    .cta-hero {
+
+        padding: 0.6rem 5rem;
+        font-size: 1.1rem;
+        margin-bottom: 2rem;
+    }
+
+    .cta-hero:hover {
+
+        transform: scale(1.1);
+        transition: transform 0.2s ease;
+
+    }
+
+    /*==========================ABOUT ME========================*/
+
+    .contenido-aboutMe {
+
+        gap: 0;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: 1fr 1fr;
+
+        width: 80%;
+        margin: auto;
+
+
+    }
+
+    .img-aboutMe img {
+
+        width: 500px;
+        margin: auto;
+
+    }
+
+    .cont-aboutMe h2 {
+
+        font-size: 4rem;
+        margin-bottom: 7rem;
+        width: 18%;
+    }
+
+    .texto-aboutMe h3 {
+
+        font-size: 2.3rem;
+        width: 65%;
+        margin-bottom: 2rem;
+    }
+
+
+
+    .texto-aboutMe p {
+
+        line-height: 1.7;
+        font-size: 1.1rem;
+        text-align: start;
+        width: 75%;
+        margin: auto
+    }
+
+    .accordion-content {
+        max-height: none !important;
+        overflow: visible !important;
+    }
+
+    .cont-leer {
+        display: none;
+    }
+
+    /*==========================SERVICES========================*/
+
+    .btn-icon svg {
+
+        width: 170px;
+        height: 100px;
+
+    }
+
+    .btn-icon {
+
+        gap: 6rem;
+    }
+
+    .btn-icon button {
+
+        padding: 1.5rem 0;
+        width: auto;
+        height: auto;
+        font-size: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .grid-services h2 {
+        grid-column: 1/-1;
+        font-size: 4rem;
+        width: 30%;
+
+
+    }
+
+    .contenido-elevation p,
+    .cont-intervencion p {
+
+        width: 90%;
+        font-size: 1.3rem;
+        line-height: 2;
+    }
+
+    .cont-icon {
+
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .contenido-elevation h3,
+    .cont-intervencion h3 {
+        font-size: 2.3rem;
+    }
+
+    /*==========================EN QUE PUEDO AYUDARTE========================*/
+
+
+    .container-details h2 {
+
+        font-size: 3rem;
+
+        width: 80%;
+        margin-bottom: 6rem;
+        margin-top: 0;
+
+
+    }
+
+    .cont-details {
+
+        width: 90%;
+
+    }
+
+
+
+
+
+    .grid-services {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5rem;
+        width: 90%;
+        margin: auto;
+
+    }
+
+    .cont-servicios,
+    .btn-icon button {
+
+        margin: 0;
+    }
+    .cont-details summary {
+
+        font-size: 1.6rem;
+    }
+
+    details[open] .title-summary2 {
+        position: absolute;
+        left: 50%;
+        width: 50%;
+        text-align: center;
+        font-size: 1.9rem;
+
+    }
+
+    details[open] .title-summary3 {
+        left: 50%;
+        width: 50%;
+        text-align: center;
+
+
+
+        font-size: 1.9rem;
+
+    }
+
+    /*==========================CONTACTO========================*/
+
+
+
+    .contact-form {
+
+        width: 75%;
+    }
+
+
+    form {
+
+        margin: 0;
+        padding: 0;
+    }
+
+    form h2 {
+
+        display: none;
+    }
+
+
+    .contenido-grid {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: start;
+        align-items: start;
+        width: 80%;
+        margin: auto;
+
+
+    }
+
+
+    .mapa-section {
+
+        margin-top: 2.2rem;
+    }
+
+    .mapa-container {
+        margin: auto;
+        width: 80%;
+    }
+
+
+
+    .mapa-container iframe {
+
+        width: 100%;
+
+    }
+
+    .h2-grid {
+
+        display: block;
+        grid-column: 1/-1;
+
+        font-size: 4rem;
+        text-align: center;
+
+        border-bottom: 2px solid #d6b56da2;
+        width: 25%;
+        margin: auto;
+        margin-bottom: 3rem;
+    }
+
+    /*==========================FOOTER========================*/
+
+    .contenido-footer {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        width: 60%;
+        margin: auto;
+        padding: 2rem 0;
+    }
+
+    .img-foot img {
+
+        width: 250px;
+    }
+
+    .img-foot small {
+
+        font-size: 1rem;
+
+    }
+
+    .contacto-foot h4,
+    .legal-foot h4 {
+
+        font-size: 1.3rem;
+    }
+
+    .cont-footer a {
+
+        font-size: 0.8rem;
+    }
+
+    .reservados {
+
+        grid-column: 1/-1;
+        font-size: 1rem !important;
+        margin-top: 2rem;
+        text-align: center;
+    }
+
+}

@@ -1,0 +1,125 @@
+
+
+.btn-icon {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+
+   
+}
+
+.btn-icon button {
+
+
+    border: 1px solid rgb(199, 199, 199);
+    width: auto;
+    height: auto;
+    background-color: #ffd7802e;
+    border-radius: 0.5rem;
+    font-size: 1.1rem;
+    padding: 0.7rem;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.497);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    margin-bottom: 2rem;
+
+
+}
+
+.btn-servicio {
+    background: transparent;
+    border: 1px solid #ccc;
+    padding: 0.8rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.btn-servicio.active {
+    background: #ffd780a2;
+    color: rgb(0, 0, 0);
+    transform: scale(1.1);
+    transition: all 0.2s ease;
+
+
+}
+
+
+.btn-icon svg {
+
+    width: 70px;
+    height: 70px;
+    stroke-width: 1;
+
+    color: rgb(0, 0, 0);
+}
+
+
+
+
+
+.contenido-elevation,
+.cont-intervencion {
+    margin: 1rem 0;
+
+    border-top: 0;
+
+
+}
+
+.contenido-elevation p,
+.cont-intervencion p {
+
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    line-height: 1.8;
+    width: 90%;
+    margin: auto;
+    padding: 1rem 0.5rem;
+    border-radius: 0.3rem;
+}
+
+.contenido-elevation h3,
+.cont-intervencion h3 {
+    font-size: 1.5rem;
+    text-align: center;
+
+    width: 85%;
+    padding-top: 1rem;
+    margin: auto;
+
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.153);
+
+}
+
+.cont-icon h4 {
+
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 3rem auto;
+
+
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.303);
+}
+
+.grid-services h2 {
+
+    font-size: 2.8rem;
+    width: 90%;
+    margin: auto;
+    margin-top: 5rem;
+    text-align: center;
+    border-bottom: 2px solid var(--color-principal);
+
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.303);
+}

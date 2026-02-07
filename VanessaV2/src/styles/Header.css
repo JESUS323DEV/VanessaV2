@@ -1,0 +1,127 @@
+.nav-menu {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.5rem;
+
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.226);
+
+}
+
+
+
+.list-nav{
+
+    position: fixed;
+    top: 6rem;
+    background-color: white;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+}
+
+.list-nav::before {
+
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.925);
+    z-index: -1;
+}
+
+.list-nav ul {
+    padding: 2rem 0;
+}
+
+.list-nav li {
+
+    font-size: 1.7rem;
+    padding: 0.5rem;
+    width: 90%;
+    margin: 2rem auto;
+    color: white;
+    border-bottom: 1px solid rgba(255, 196, 0, 0.384);
+}
+
+
+.bgNav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 10;
+}
+
+.bgNav::before {
+
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.219);
+    z-index: -1;
+}
+
+.logo {
+
+    width: 180px;
+    transition: all 0.2s ease;
+    
+        backdrop-filter: blur(2px);
+
+}
+
+.logo--menu {
+    width: 130px;
+    transition: all 0.2s ease;
+    padding: 0.5rem 0;
+}
+
+.closeMenu {
+
+    width: 40px;
+    height: 45px;
+    padding: 0.2rem;
+
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 1.5rem;
+    top: 1.5rem;
+
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.header--menu {
+    justify-content: center !important;
+}
+
+.hidden {
+    display: none;
+}
+
+.menu.closed {
+    display: none;
+}
+
+.menu.open {
+    display: flex;
+    flex-direction: column;
+}

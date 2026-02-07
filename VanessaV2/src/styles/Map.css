@@ -1,0 +1,29 @@
+.mapa-container iframe {
+    pointer-events: none;
+}
+
+.mapa-section {
+
+    margin-top: 4rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.mapa-section h2 {
+
+    font-size: 2.3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #d6b56da2;
+    width: 85%;
+    margin: auto;
+}
+
+.mapa-section p {
+
+    text-align: center;
+    font-size: 0.9rem;
+}

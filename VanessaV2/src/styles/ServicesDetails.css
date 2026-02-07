@@ -1,0 +1,231 @@
+.cont-details {
+    width: 95%;
+    margin: auto;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.3rem;
+
+}
+
+.container-details h4 {
+
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 3rem auto;
+
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.303);
+}
+
+.icons {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+}
+
+/* Iconos base */
+.iconArrow,
+.iconClose {
+    transition: transform 0.2s ease;
+}
+
+
+
+.iconClose svg {
+    width: 20px;
+    height: 45px;
+
+}
+
+details[open] .iconArrow {
+
+    transform: rotate(90deg);
+}
+
+/* La X no se ve por defecto */
+.iconClose {
+    opacity: 0;
+    position: absolute;
+}
+
+details[open] summary {
+
+    min-height: 3.5rem;
+    position: relative;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.6);
+    border-radius: 0.3rem 0.3rem 0 0;
+
+
+
+}
+
+details[open] .summary-title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.7rem;
+}
+
+details[open] .title-summary2 {
+    border-radius: 0.3rem 0.3rem 0 0;
+    position: absolute;
+    left: 45%;
+
+    width: 70%;
+
+    transform: translateX(-50%);
+    font-size: 1.5rem;
+
+}
+
+details[open] .title-summary3 {
+    border-radius: 0.3rem 0.3rem 0 0;
+    position: absolute;
+    left: 50%;
+    width: 90%;
+
+
+    transform: translateX(-50%);
+    font-size: 1.4rem;
+
+}
+
+
+
+
+
+/* Cuando está abierto */
+details[open] .iconArrow {
+    opacity: 0;
+    transform: rotate(90deg);
+}
+
+details[open] .iconClose {
+    opacity: 1;
+    margin-top: 0.4rem;
+    position: absolute;
+
+}
+
+
+
+.cont-details summary {
+
+    background-color: #ffe19fac;
+    position: relative;
+    border-radius: 0.3rem;
+    padding: 1rem 2rem;
+
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.138);
+
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.226);
+}
+
+
+.texto-details1 {
+
+    margin-top: 1.1rem;
+}
+
+.texto-details1 h5 {
+
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 1rem 1rem;
+
+}
+
+.texto-details1 p {
+
+
+    font-size: 1rem;
+    line-height: 1.6;
+
+    padding: 1rem 1.5rem;
+
+
+
+
+}
+
+.contenido-details1 {
+    position: relative;
+    z-index: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.226);
+
+
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+}
+
+.contenido-details1::before {
+
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.675);
+    z-index: -1;
+}
+
+.lista-details1 {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0.5rem;
+
+}
+
+.lista-details1 ul {
+
+
+    width: 100%;
+
+}
+
+
+
+
+.lista-details1 p {
+    font-size: 1.3rem;
+    padding: 0.5rem;
+    margin: 1.5rem auto;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+
+
+
+
+.lista-details1 li {
+    margin-bottom: 0.5rem;
+    list-style-type: disc;
+    margin-left: 1.6rem;
+    line-height: 1.3;
+}

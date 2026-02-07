@@ -1,0 +1,136 @@
+.contact-form {
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.3rem;
+
+    width: 90%;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+form {
+
+    margin-top: 5rem;
+}
+
+form h2 {
+
+    font-size: 2.8rem;
+    text-align: center;
+    border-bottom: 2px solid #d6b56da2;
+    width: 60%;
+    margin: auto;
+}
+
+.form-group {
+
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    gap: 0.2rem;
+
+
+
+}
+
+.form-group p {
+
+    text-align: center;
+    font-size: 0.85rem;
+    margin-bottom: 2rem;
+}
+
+.form-group input {
+
+    border: 1px solid rgb(155, 155, 155);
+    width: 100%;
+
+    height: 35px;
+    border-radius: 0.2rem;
+    padding: 0.2rem 0.5rem;
+
+}
+
+
+.form-group textarea {
+
+    border: 1px solid rgb(155, 155, 155);
+    height: 100px;
+    border-radius: 0.2rem;
+    padding: 0.2rem 0.3rem;
+
+    resize: none;
+}
+
+.form-group select {
+
+    height: 40px;
+    padding: 0.2rem 0.5rem;
+    border: 1px solid rgb(155, 155, 155);
+    background-color: white;
+    border-radius: 0.2rem;
+
+
+
+}
+
+
+.form-group label {
+
+    font-size: 1.1rem;
+    padding: 0.2rem 0.3rem;
+
+}
+
+.form-actions {
+
+    margin-top: 2rem;
+}
+
+.form-actions button {
+
+    background-color: var(--color-border-card);
+    color: rgb(0, 0, 0);
+    border: 1px solid rgba(155, 155, 155, 0.419);
+    padding: 0.5rem 1rem;
+    border-radius: 0.2rem;
+    font-size: 1rem;
+
+}
+
+.h2-grid {
+
+    display: none;
+}
+
+.reserva-extra {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.reserva-extra h5 {
+
+    text-align: center;
+}
+
+.links-reserva-extra {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.links-reserva-extra a img {
+
+    width: 40px;
+}
