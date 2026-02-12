@@ -89,7 +89,7 @@ export default function Header() {
                                                     setOpenMenu(false);
                                                     ScrollSections("contact");
                                                 }}>
-                                                Escríbeme
+                                                Contacto
                                             </Link>
                                         </li>
                                     </ul>

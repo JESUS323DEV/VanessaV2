@@ -38,7 +38,7 @@ export default function servicesButtons() {
 
                     {iconOpen === "evaluacion" && (
                         <div className="contenido-elevation">
-                            <h3>Evaluación y diagnóstico</h3>
+                            <h3>Orientación diagnóstica</h3>
                             <p>Realizo una valoración completa para identificar dificultades específicas del aprendizaje y necesidades educativas en niños y adolescentes, especialmente en casos de TEA, TDAH y Dislexia. A través de pruebas estandarizadas, entrevistas y observación, elaboro un informe detallado con recomendaciones claras para familias y centros educativos.</p>
                         </div>
 

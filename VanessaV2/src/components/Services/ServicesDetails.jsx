@@ -131,7 +131,7 @@ export default function servicesDetails() {
                                     <li>Actividades estructuradas y multisensoriales.</li>
                                     <li>Trabajo progresivo y adaptado al nivel del niño, niña y adolescente.</li>
                                     <li>Refuerzo de logros y avances.</li>
-                                    <li>Coordinación con la escuela para ajustes necesarios.</li>
+                                    <li>Coordinación con la escuela y familias.</li>
                                 </ul>
                             </div>
                         </div>

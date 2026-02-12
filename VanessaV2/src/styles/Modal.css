@@ -1,0 +1,60 @@
+.modal-cont {
+
+    position: fixed;
+    background-color: rgba(29, 29, 29, 0.797);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.modal-cont button {
+
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.content-modal {
+
+    position: fixed;
+    z-index: 5;
+    top: 20%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 95%;
+    height: 70vh;
+    background-color: rgba(0, 0, 0, 0.868);
+    border-radius: 0.5rem;
+    color: white;
+    z-index: 10;
+    overflow: auto;
+    padding: 1rem 0;
+}
+
+.content-modal h2 {
+    padding-bottom: 1rem;
+    font-size: 1.7rem;
+    width: 90%;
+    margin: auto;
+    margin-top: 3rem;
+    text-align: center;
+
+}
+
+.content-modal h3 {
+
+    width: 90%;
+    margin: auto;
+
+}
+
+.content-modal p {
+
+    width: 90%;
+    margin: auto;
+    line-height: 1.5;
+    padding: 0.5rem 0;
+    margin-bottom: 2rem;
+}
