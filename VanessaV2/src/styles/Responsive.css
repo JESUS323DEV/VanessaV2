@@ -3,37 +3,11 @@
    ===================== */
 
 /* Móviles XS (≤575px) */
-@media (max-width: 575px) {
-    body::before {
-        content: "XS";
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 20px;
-        height: 20px;
-        background: rgb(185, 6, 6);
-        color: rgb(0, 0, 0);
-        padding: 5px;
-        z-index: 9999;
-
-    }
-}
+@media (max-width: 575px) {}
 
 /*SM: Móviles pequeños verticales y móviles estándar(576px – 767px) */
 @media (min-width: 576px) and (max-width: 767px) {
-    body::before {
-        content: "SM";
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 20px;
-        height: 20px;
-        background: rgb(0, 255, 30);
-        color: rgb(0, 0, 0);
-        padding: 5px;
-        z-index: 9999;
 
-    }
 
     /*==========================HERO========================*/
     .bgHero {
@@ -112,18 +86,7 @@
 
 /*MD: Tablets verticales (768px – 991px) */
 @media (min-width: 768px) and (max-width: 991px) {
-    body::before {
-        content: "MD";
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 20px;
-        height: 20px;
-        background: rgb(1, 22, 255);
-        color: rgb(0, 0, 0);
-        padding: 5px;
-        z-index: 9999;
-    }
+
 
     /*==========================HERO========================*/
     .bgHero {
@@ -202,7 +165,7 @@
     }
 
 
-       .content-modal {
+    .content-modal {
 
         max-width: 80% !important;
         height: 70vh !important;
@@ -213,19 +176,7 @@
 /* LG Tablets horizontales / laptops pequeñas-mini LG (992px – 1199px) */
 @media (min-width: 992px) and (max-width: 1199px) {
 
-    body::before {
-        content: "LG";
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 20px;
-        height: 20px;
-        background: rgb(196, 1, 255);
-        color: rgb(0, 0, 0);
-        padding: 5px;
-        z-index: 9999;
 
-    }
 
     #aboutMe,
     #services,
@@ -610,19 +561,7 @@
 
 /*SXL: laptos pequeñas(1200px – 1279px) */
 @media (min-width: 1200px) and (max-width: 1279px) {
-    body::before {
-        content: "1200px-1279px";
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 50px;
-        height: 20px;
-        background: rgb(0, 0, 0);
-        color: rgb(255, 255, 255);
-        padding: 5px;
-        z-index: 9999;
 
-    }
 
     #aboutMe,
     #services,
@@ -1103,18 +1042,7 @@
 /*XL laptos grandes (1280px – 1399px) */
 @media (min-width: 1280px) and (max-width: 1399px) {
 
-    body::before {
-        content: "XL";
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 50px;
-        height: 20px;
-        background: rgb(255, 102, 0);
-        color: rgb(255, 255, 255);
-        padding: 5px;
-        z-index: 9999;
-    }
+
 
     #aboutMe,
     #services,
@@ -1588,18 +1516,7 @@
 
 /*XXL: Pantallas grandes ≥1400px */
 @media (min-width: 1400px) {
-    body::before {
-        content: "XXL";
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 50px;
-        height: 20px;
-        background: rgb(135, 181, 255);
-        color: rgb(255, 255, 255);
-        padding: 5px;
-        z-index: 9999;
-    }
+
 
     #aboutMe,
     #services,
