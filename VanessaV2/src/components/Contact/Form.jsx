@@ -31,7 +31,7 @@ export default function Form() {
     const [reason, setReason] = useState("");
     const [message, setMessage] = useState("");
 
-    const phoneNumber = "34695078648"; // número con prefijo
+    const phoneNumber = "34727760812"; // número con prefijo
 
     // Solo letras y espacios
     const onlyLetters = (value) => {
