@@ -89,7 +89,7 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    gap: 0.5rem;
+    gap: 1rem;
 }
 
 .cta-hero {
