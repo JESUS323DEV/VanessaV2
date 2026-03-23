@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 import bgHero from "../assets/dibujo2.jpg"
 
 
-import ScrollSections from "../components/ScrollSections" 
+import ScrollSections from "../components/ScrollSections"
 
 export default function Hero() {
 
@@ -22,15 +22,30 @@ export default function Hero() {
                             <p>Un apoyo en cada pequeño paso.</p>
                         </div>
 
-                        <div className='cta-hero'>
-                            <Link to="/servicios"
-                                onClick={() => {
-                                    ScrollSections("services");
+                        <div className="cont-cta-hero">
+                            <div className='cta-hero'>
+                                <Link to="/servicios"
+                                    onClick={() => {
+                                        ScrollSections("services");
 
-                                }} >
-                                Más información
-                            </Link>
+                                    }} >
+                                    Más información
+                                </Link>
+                            </div>
+
+                            <div className='cta-hero1'>
+                                <Link to="/contacto"
+                                    onClick={() => {
+                                        ScrollSections("contact");
+
+                                    }} >
+                                    Contacto
+                                </Link>
+                            </div>
+
                         </div>
+
+
 
                     </div>
                 </div>
