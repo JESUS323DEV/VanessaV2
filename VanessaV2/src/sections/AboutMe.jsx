@@ -66,7 +66,7 @@ export default function AboutMe() {
 
                                     <p>  En casos de <b>Dislexia y TDAH</b>, centro mi intervención en la mejora de las funciones ejecutivas y la <b>inteligencia emocional</b>, utilizando técnicas de autoinstrucciones y refuerzo positivo para lograr un desarrollo académico y personal equilibrado.</p>
 
-                                    <p>  Mi pasión es acompañar a niños y niñas, adolescentes y sus familias en el <b>desarrollo de habilidades de aprendizaje</b>, atención y bienestar emocional. Trabajo con niños y niñas con TEA, TDAH y dificultades de aprendizaje como dislexia.</p>
+                                    <p>  Mi pasión es acompañar a niños, niñas, adolescentes y sus familias en el <b>desarrollo de habilidades de aprendizaje</b>, atención y bienestar emocional. </p>
 
                                 </div>
                             </div>
