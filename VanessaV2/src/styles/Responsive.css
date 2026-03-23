@@ -47,6 +47,15 @@
         margin: auto;
     }
 
+    .img-aboutMe img {
+        width: 320px;
+        height: 360px;
+    }
+
+    .carousel-img-wrapper {
+        height: 360px;
+    }
+
     /*==========================SERVICES========================*/
 
     .cont-servicios h2 {
@@ -126,7 +135,14 @@
         margin: auto;
     }
 
+    .img-aboutMe img {
+        width: 340px;
+        height: 380px;
+    }
 
+    .carousel-img-wrapper {
+        height: 380px;
+    }
 
     /*==========================SERVICES========================*/
 
@@ -764,8 +780,13 @@
     .img-aboutMe img {
 
         width: 500px;
+        height: 550px;
         margin: auto;
 
+    }
+
+    .carousel-img-wrapper {
+        height: 550px;
     }
 
     .cont-aboutMe h2 {
@@ -1243,8 +1264,13 @@
     .img-aboutMe img {
 
         width: 500px;
+        height: 550px;
         margin: auto;
 
+    }
+
+    .carousel-img-wrapper {
+        height: 550px;
     }
 
     .cont-aboutMe h2 {
@@ -1737,8 +1763,13 @@
     .img-aboutMe img {
 
         width: 500px;
+        height: 550px;
         margin: auto;
 
+    }
+
+    .carousel-img-wrapper {
+        height: 550px;
     }
 
     .cont-aboutMe h2 {

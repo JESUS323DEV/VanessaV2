@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 
 import { ArrowRight, X } from "lucide-react";
 
@@ -7,7 +7,7 @@ import bgNav from "../../assets/bg-header.png";
 
 import ScrollDetails from "../ScrollDetails";
 
-export default function servicesDetails() {
+export default function ServicesDetails() {
 
     //COMPONENTE SCROLL DETAILS
     const detailsRefs = useRef([]);
@@ -39,7 +39,7 @@ export default function servicesDetails() {
                         <div className="contenido-details1" style={{ backgroundImage: `url(${bgNav})` }}>
                             <div className="texto-details1">
                                 <h5>Trastorno del Espectro Autista</h5>
-                                <p>Acompaño a niños, niñas y adolescentes con trastorno dentro del espectro autista desde un enfoque respetuoso,
+                                <p>Acompaño a niños, niñas y adolescentes con trastorno del espectro autista desde un enfoque respetuoso,
                                     individualizado y centrado en sus fortalezas.</p>
                             </div>
 
