@@ -64,7 +64,7 @@ export default function AboutMe() {
                                 <div className="text-content">
                                     <p> Mi metodología de trabajo esta basada en la evidencia, aplicando principios de <b> ABA, TEACCH y PECS</b> para potenciar la comunicación y autonomía. </p>
 
-                                    <p>  En casos de <b>Dislexia y TDAH</b>, centro mi intervención en la mejora de las funciones ejecutivas y la <b>inteligencia emocional</b>, utilizando técnicas de autoinstrucciones y refuerzo positivo para lograr un desarrollo académico y personal equilibrado.</p>
+                                    <p>  En casos de Dislexia y TDAH, centro mi intervención en la mejora de las funciones ejecutivas y la <b>inteligencia emocional</b>, utilizando técnicas de autoinstrucciones y refuerzo positivo para lograr un desarrollo académico y personal equilibrado.</p>
 
                                     <p>  Mi pasión es acompañar a niños, niñas, adolescentes y sus familias en el <b>desarrollo de habilidades de aprendizaje</b>, atención y bienestar emocional. </p>
 
