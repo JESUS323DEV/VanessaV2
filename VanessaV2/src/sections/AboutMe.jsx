@@ -57,14 +57,14 @@ export default function AboutMe() {
                             <p> <b>Psicóloga y psicopedagoga</b>  especializada en Dificultades del Aprendizaje y Trastornos del Neurodesarrollo,
                                 formada en la <b> Universidad de Barcelona</b> y <i><b>Universitat Oberta de Catalunya</b></i></p>
 
-                            <p>Cuento con más de 5 años de experiencia clínica, me especializo en la intervención de TEA, TDAH, Dislexia   <b>TEA, TDAH y dislexia y sus comorbilidades.</b>
+                            <p>Cuento con más de 5 años de experiencia clínica, me especializo en la intervención <b>TEA, TDAH y dislexia y sus comorbilidades.</b>
                             </p>
 
                             <div className={`accordion-content ${open ? "open" : ""}`}>
                                 <div className="text-content">
                                     <p> Mi metodología de trabajo esta basada en la evidencia, aplicando principios de <b> ABA, TEACCH y PECS</b> para potenciar la comunicación y autonomía. </p>
 
-                                    <p>  En casos de Dislexia y TDAH, centro mi intervención en la mejora de las funciones ejecutivas y la inteligencia emocional, utilizando técnicas de autoinstrucciones y refuerzo positivo para lograr un desarrollo académico y personal equilibrado.</p>
+                                    <p>  En casos de <b>Dislexia y TDAH</b>, centro mi intervención en la mejora de las funciones ejecutivas y la <b>inteligencia emocional</b>, utilizando técnicas de autoinstrucciones y refuerzo positivo para lograr un desarrollo académico y personal equilibrado.</p>
 
                                     <p>  Mi pasión es acompañar a niños y niñas, adolescentes y sus familias en el <b>desarrollo de habilidades de aprendizaje</b>, atención y bienestar emocional. Trabajo con niños y niñas con TEA, TDAH y dificultades de aprendizaje como dislexia.</p>
 
