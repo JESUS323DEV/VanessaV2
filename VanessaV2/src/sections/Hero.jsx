@@ -1,6 +1,6 @@
 import { HeartHandshake, MessageCircle } from "lucide-react";
 
-import heroImg from "../assets/dibujo2.jpg";
+import heroImg from "../assets/dibujo2.webp";
 
 export default function Hero() {
     return (

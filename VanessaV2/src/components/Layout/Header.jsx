@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { List, X } from "lucide-react";
 
 import logo from "../../assets/logo1.1.png";
-import bgHeader from "../../assets/bg-header.png";
+import bgHeader from "../../assets/bg-header.webp";
 
 const NAV_LINKS = [
     { href: "/#hero", label: "Inicio" },

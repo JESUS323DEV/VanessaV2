@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Send, Phone, Mail, Linkedin } from "lucide-react";
 
-import bgSection from "../assets/bg-header.png";
+import bgSection from "../assets/bg-header.webp";
 
 const PHONE_NUMBER = "34727760812";
 
