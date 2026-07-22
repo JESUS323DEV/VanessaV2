@@ -1,4 +1,14 @@
+import { useEffect } from "react";
+
 export default function Privacidad() {
+    useEffect(() => {
+        document.title = "Política de Privacidad - Vanessa Psicopedagoga";
+
+        return () => {
+            document.title = "Vanessa - Psicopedagoga";
+        };
+    }, []);
+
     return (
         <section className="mx-auto max-w-2xl px-6 pb-16 pt-28 sm:px-10">
             <h1 className="font-serif text-3xl text-neutral-900">

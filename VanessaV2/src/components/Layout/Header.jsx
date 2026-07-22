@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { List, X } from "lucide-react";
 
 import logo from "../../assets/logo1.1.png";
@@ -11,8 +11,32 @@ const NAV_LINKS = [
     { href: "/#contact", label: "Contacto" },
 ];
 
+const SECTION_IDS = NAV_LINKS.map((link) => link.href.replace("/#", ""));
+
 export default function Header() {
     const [open, setOpen] = useState(false);
+    const [activeSection, setActiveSection] = useState(SECTION_IDS[0]);
+
+    useEffect(() => {
+        const sections = SECTION_IDS
+            .map((id) => document.getElementById(id))
+            .filter(Boolean);
+
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        setActiveSection(entry.target.id);
+                    }
+                });
+            },
+            { rootMargin: "-45% 0px -45% 0px" }
+        );
+
+        sections.forEach((section) => observer.observe(section));
+
+        return () => observer.disconnect();
+    }, []);
 
     return (
         <header
@@ -38,20 +62,24 @@ export default function Header() {
                 </button>
 
                 <ul className="hidden items-center gap-10 text-sm font-medium text-neutral-800 md:flex lg:gap-12 lg:text-base">
-                    {NAV_LINKS.map((link, index) => (
-                        <li key={link.href}>
-                            <a
-                                href={link.href}
-                                className={`border-b pb-1 transition-colors hover:text-neutral-900 ${
-                                    index === 0
-                                        ? "border-principal text-neutral-900"
-                                        : "border-transparent"
-                                }`}
-                            >
-                                {link.label}
-                            </a>
-                        </li>
-                    ))}
+                    {NAV_LINKS.map((link) => {
+                        const isActive = activeSection === link.href.replace("/#", "");
+
+                        return (
+                            <li key={link.href}>
+                                <a
+                                    href={link.href}
+                                    className={`border-b pb-1 transition-colors hover:text-neutral-900 ${
+                                        isActive
+                                            ? "border-principal text-neutral-900"
+                                            : "border-transparent"
+                                    }`}
+                                >
+                                    {link.label}
+                                </a>
+                            </li>
+                        );
+                    })}
                 </ul>
             </nav>
 
@@ -75,21 +103,25 @@ export default function Header() {
                 </div>
 
                 <ul className="mt-16 flex flex-col items-center gap-2 font-serif text-2xl text-neutral-900">
-                    {NAV_LINKS.map((link, index) => (
-                        <li key={link.href} className="w-full max-w-xs">
-                            <a
-                                href={link.href}
-                                onClick={() => setOpen(false)}
-                                className={`flex justify-center border-b py-4 transition-colors ${
-                                    index === 0
-                                        ? "border-principal text-principal"
-                                        : "border-neutral-900/10 hover:text-principal"
-                                }`}
-                            >
-                                {link.label}
-                            </a>
-                        </li>
-                    ))}
+                    {NAV_LINKS.map((link) => {
+                        const isActive = activeSection === link.href.replace("/#", "");
+
+                        return (
+                            <li key={link.href} className="w-full max-w-xs">
+                                <a
+                                    href={link.href}
+                                    onClick={() => setOpen(false)}
+                                    className={`flex justify-center border-b py-4 transition-colors ${
+                                        isActive
+                                            ? "border-principal text-principal"
+                                            : "border-neutral-900/10 hover:text-principal"
+                                    }`}
+                                >
+                                    {link.label}
+                                </a>
+                            </li>
+                        );
+                    })}
                 </ul>
             </div>
         </header>
