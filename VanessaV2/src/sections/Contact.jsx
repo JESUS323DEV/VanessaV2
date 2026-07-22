@@ -39,10 +39,10 @@ export default function Contact() {
     return (
         <section
             id="contact"
-            className="bg-white bg-cover bg-center px-6 py-16 sm:px-10"
+            className="bg-white bg-cover bg-center px-6 py-16 sm:px-10 lg:py-30"
             style={{ backgroundImage: `url(${bgSection})` }}
         >
-            <div className="text-center">
+            <div className="text-center lg:pb-10">
                 <h2 className="font-serif text-4xl text-neutral-900">Contacto</h2>
 
                 <div className="mt-3 flex items-center justify-center gap-3">
@@ -52,7 +52,8 @@ export default function Contact() {
                 </div>
             </div>
 
-            <form onSubmit={handleSubmit} className="mx-auto mt-8 max-w-md">
+            <div className="lg:mx-auto lg:grid lg:max-w-5xl lg:grid-cols-2 lg:gap-16 xl:max-w-6xl">
+            <form onSubmit={handleSubmit} className="mx-auto mt-8 max-w-md lg:mx-0 lg:max-w-none">
                 <p className="text-sm leading-relaxed text-neutral-700">
                     A través de este formulario puedes solicitar información o
                     realizar una primera consulta sin compromiso.
@@ -168,7 +169,7 @@ export default function Contact() {
                 </div>
             </form>
 
-            <div className="mx-auto mt-10 max-w-md">
+            <div className="mx-auto mt-10 max-w-md lg:mx-0 lg:mt-8 lg:max-w-none">
                 <p className="text-center text-sm leading-relaxed text-neutral-700">
                     Atención a domicilio y sesiones online. Desplazamientos por la
                     zona de Barcelona centro.
@@ -185,6 +186,7 @@ export default function Contact() {
                         referrerPolicy="no-referrer-when-downgrade"
                     />
                 </div>
+            </div>
             </div>
         </section>
     );
