@@ -12,17 +12,18 @@ const NAV_LINKS = [
 export default function Footer() {
     return (
         <footer className="bg-neutral-900 px-6 py-12 text-white sm:px-10">
-            <div className="flex flex-col items-center gap-10 text-center sm:items-start sm:text-left">
-                <div className="flex flex-col items-center gap-3 sm:items-start">
+
+            <div className="flex flex-col md:flex-row items-center gap-10 text-center sm:items-start sm:text-left">
+                <div className="flex flex-col items-center gap-3 ">
                     <img src={logo} alt="Logo Vanessa" className="h-8 w-auto" />
-                    <small className="text-white/60">
+                    <small className="text-white/60 text-center">
                         Atención infanto-juvenil personalizada.
                     </small>
                 </div>
 
-                <nav aria-label="Secciones" className="flex flex-col gap-3">
+                <nav aria-label="Secciones" className="flex flex-col gap-3 border-2">
                     <h4 className="font-serif text-lg text-principal">Navegación</h4>
-                    <span className="flex gap-4">
+                    <span className="flex gap-4 md:flex-col">
                         {NAV_LINKS.map((link) => (
                             <a
                                 key={link.href}
@@ -53,7 +54,7 @@ export default function Footer() {
 
                 <div className="flex flex-col gap-3">
                     <h4 className="font-serif text-lg text-principal">Legal</h4>
-                    <span className="flex gap-2  ">
+                    <span className="flex md:flex-col gap-2">
                         <Link
                             to="/privacidad"
                             className="text-sm text-white/70 transition hover:text-white"

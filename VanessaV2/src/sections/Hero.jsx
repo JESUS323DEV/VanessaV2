@@ -11,12 +11,11 @@ export default function Hero() {
         >
             <div className="absolute inset-0 bg-black/70" />
 
-            <div className="relative z-10 min-h-[100svh] lg:min-h-[75svh] xl:min-h-[100svh] flex flex-col justify-center gap-[3rem] lg:items-start lg:pl-15 xl:pl-[10rem] 2xl:pl-[20rem]">
+            <div className="relative z-10  min-h-[100svh] md:min-h-[85svh] lg:min-h-[75svh] xl:min-h-[100svh] flex flex-col justify-center gap-[3rem] pt-24 lg:pb-16 lg:items-start lg:pl-15 xl:pl-[10rem] 2xl:pl-[20rem]">
                 <div className="flex flex-col mt-15 lg:mt-0 2xl:mt-30 gap-5 p-2 lg:max-w-2xl xl:max-w-4xl ">
 
                     <h1 className="font-serif text-center lg:text-left font-bold text-principal text-[3rem] sm:text-[4rem] md:text-[5rem] lg:text-[6rem] leading-tight drop-shadow-lg
                    
-
                     ">
                         Comprender,
                         <br />
