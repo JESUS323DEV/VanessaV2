@@ -2,10 +2,10 @@ import { useEffect, useState } from "react";
 import { MessageCircle } from "lucide-react";
 
 import bgSection from "../assets/bg-header.webp";
-import galeria1 from "../assets/galeria1.png";
-import galeria2 from "../assets/galeria2.png";
-import galeria3 from "../assets/galeria3.png";
-import galeria4 from "../assets/galeria4.png";
+import galeria1 from "../assets/galeria1.webp";
+import galeria2 from "../assets/galeria2.webp";
+import galeria3 from "../assets/galeria3.webp";
+import galeria4 from "../assets/galeria4.webp";
 
 const GALLERY_IMAGES = [galeria1, galeria2, galeria3, galeria4];
 const AUTOPLAY_MS = 4000;
