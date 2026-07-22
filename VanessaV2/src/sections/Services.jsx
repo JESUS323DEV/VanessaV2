@@ -180,7 +180,7 @@ export default function Services() {
     }, [openItem]);
 
     return (
-        <section id="services" className="bg-white px-6 py-16 sm:px-10 lg:py-30">
+        <section id="services" className="scroll-mt-8 md:scroll-mt-15 bg-white px-6 py-16 sm:px-10 lg:py-30">
             <div className="text-center lg:pb-10">
                 <h2 className="font-serif text-4xl text-neutral-900">Mis servicios</h2>
 
@@ -199,20 +199,24 @@ export default function Services() {
                     </h3>
 
                     <div className="mx-auto mt-5 flex w-fit rounded-full border border-principal/40 p-1">
-                        {Object.entries(APPROACH_TABS).map(([key, { label, icon: Icon }]) => (
-                            <button
-                                key={key}
-                                type="button"
-                                onClick={() => setTab(key)}
-                                className={`flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium transition ${tab === key
-                                        ? "bg-principal text-neutral-900"
-                                        : "text-neutral-600"
-                                    }`}
-                            >
-                                <Icon size={18} />
-                                {label}
-                            </button>
-                        ))}
+                        {Object.entries(APPROACH_TABS).map(([key, item]) => {
+                            const TabIcon = item.icon;
+
+                            return (
+                                <button
+                                    key={key}
+                                    type="button"
+                                    onClick={() => setTab(key)}
+                                    className={`flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium transition ${tab === key
+                                            ? "bg-principal text-neutral-900"
+                                            : "text-neutral-600"
+                                        }`}
+                                >
+                                    <TabIcon size={18} />
+                                    {item.label}
+                                </button>
+                            );
+                        })}
                     </div>
 
                     <div className="mx-auto mt-6 max-w-md text-center">

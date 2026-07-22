@@ -6,7 +6,7 @@ export default function Hero() {
     return (
         <section
             id="hero"
-            className="relative bg-cover bg-[center_65%] xl:bg-[top] "
+            className="relative scroll-mt-8 md:scroll-mt-15 bg-cover bg-[center_65%] xl:bg-[top] "
             style={{ backgroundImage: `url(${heroImg})` }}
         >
             <div className="absolute inset-0 bg-black/70" />

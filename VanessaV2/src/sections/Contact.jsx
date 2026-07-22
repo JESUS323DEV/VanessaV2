@@ -39,7 +39,7 @@ export default function Contact() {
     return (
         <section
             id="contact"
-            className="bg-white bg-cover bg-center px-6 py-16 sm:px-10 lg:py-30"
+            className="scroll-mt-8 md:scroll-mt-15 bg-white bg-cover bg-center px-6 py-16 sm:px-10 lg:py-30"
             style={{ backgroundImage: `url(${bgSection})` }}
         >
             <div className="text-center lg:pb-10">

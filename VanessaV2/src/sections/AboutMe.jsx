@@ -52,7 +52,7 @@ export default function AboutMe() {
     return (
         <section
             id="aboutMe"
-            className="bg-white bg-cover bg-center px-6 py-16 lg:py-30 sm:px-10 "
+            className="scroll-mt-8 md:scroll-mt-15 bg-white bg-cover bg-center px-6 py-16 lg:py-30 sm:px-10 "
             style={{ backgroundImage: `url(${bgSection})` }}
         >
             <div className="text-center lg:pb-10 ">

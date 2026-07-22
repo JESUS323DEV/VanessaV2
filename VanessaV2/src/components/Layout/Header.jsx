@@ -56,25 +56,36 @@ export default function Header() {
             </nav>
 
             <div
-                className={`fixed inset-0 z-50 flex flex-col bg-white/98 backdrop-blur-sm transition-transform duration-300 md:hidden ${
+                className={`fixed inset-0 z-50 flex flex-col bg-white bg-cover bg-center transition-transform duration-300 md:hidden ${
                     open ? "translate-x-0" : "translate-x-full"
                 }`}
+                style={{ backgroundImage: `url(${bgHeader})` }}
             >
-                <div className="flex justify-end px-6 py-4">
+                <div className="flex items-center justify-between px-6 py-4">
+                    <img src={logo} alt="Vanessa - Psicóloga y Psicopedagoga" className="h-9 w-auto" />
+
                     <button
                         type="button"
                         onClick={() => setOpen(false)}
-                        className="text-neutral-800"
+                        className="flex h-10 w-10 items-center justify-center rounded-full border border-principal/40 text-neutral-800"
                         aria-label="Cerrar menú"
                     >
-                        <X size={28} />
+                        <X size={22} />
                     </button>
                 </div>
 
-                <ul className="mt-10 flex flex-col items-center gap-8 text-lg font-medium text-neutral-800">
-                    {NAV_LINKS.map((link) => (
-                        <li key={link.href}>
-                            <a href={link.href} onClick={() => setOpen(false)}>
+                <ul className="mt-16 flex flex-col items-center gap-2 font-serif text-2xl text-neutral-900">
+                    {NAV_LINKS.map((link, index) => (
+                        <li key={link.href} className="w-full max-w-xs">
+                            <a
+                                href={link.href}
+                                onClick={() => setOpen(false)}
+                                className={`flex justify-center border-b py-4 transition-colors ${
+                                    index === 0
+                                        ? "border-principal text-principal"
+                                        : "border-neutral-900/10 hover:text-principal"
+                                }`}
+                            >
                                 {link.label}
                             </a>
                         </li>
