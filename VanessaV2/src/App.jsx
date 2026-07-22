@@ -8,39 +8,32 @@ import AboutMe from "./sections/AboutMe"
 import Services from "./sections/Services"
 import Contact from "./sections/Contact"
 
+import Privacidad from "./pages/Privacidad"
+import AvisoLegal from "./pages/AvisoLegal"
 
-import ScrollHandler from "./components/ScrollHandler"
-
-const HomeLayout = () => (
-  <>
-    <Header />
-
-    <main>
-      <Hero />
-      <AboutMe />
-      <Services />
-      <Contact />
-    </main>
-
-    <Footer />
-  </>
+const Home = () => (
+  <main>
+    <Hero />
+    <AboutMe />
+    <Services />
+    <Contact />
+  </main>
 );
+
 function App() {
   return (
     <BrowserRouter>
+      <Header />
 
-      <ScrollHandler />
-      
       <Routes>
-        <Route path="/" element={<HomeLayout />} />
-        <Route path="/sobre-mi" element={<HomeLayout />} />
-        <Route path="/servicios" element={<HomeLayout />} />
-        <Route path="/contacto" element={<HomeLayout />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/privacidad" element={<Privacidad />} />
+        <Route path="/aviso-legal" element={<AvisoLegal />} />
       </Routes>
 
+      <Footer />
     </BrowserRouter>
   )
 }
 
 export default App
-
